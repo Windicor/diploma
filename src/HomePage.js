@@ -33,12 +33,12 @@ const HomePage = () => {
 
     return (
         <div style={containerStyle}>
-            <h1 style={headingStyle}>Welcome to the Quiz App!</h1>
-            <p style={descriptionStyle}>Test your knowledge with our exciting quiz.</p>
+            <h1 style={headingStyle}>Как управлять моим проектом?</h1>
+            <p style={descriptionStyle}>Ответь на несколько простых вопросов и получи рекоммендацию по проектному управлению</p>
 
             <Link to="/quiz">
                 <Button variant="primary" style={buttonStyle}>
-                    Start Quiz
+                    Начать
                 </Button>
             </Link>
         </div>
