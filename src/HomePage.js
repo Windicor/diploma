@@ -17,6 +17,7 @@ const HomePage = () => {
         fontSize: '32px',
         fontWeight: 'bold',
         marginBottom: '20px',
+        textAlign: "center",
     };
 
     const descriptionStyle = {
