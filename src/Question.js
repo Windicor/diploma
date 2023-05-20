@@ -9,20 +9,20 @@ const containerStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
+    maxHeight: '100vh',
     backgroundColor: '#f2f2f2',
     padding: '20px',
     position: "relative"
 };
 
 const questionAnswer = {
-    fontSize: '32px',
-    marginBottom: '30px',
+    fontSize: '30px',
+    marginBottom: '20px',
 };
 
 const buttonStyle = {
-    fontSize: '20px',
+    fontSize: '18px',
     padding: '10px 30px',
-    marginRight: '10px',
     width: '20%',
     height: 40,
     display: 'flex',
@@ -56,13 +56,13 @@ const QuestionComponent = () => {
                 exactQuestion?.answer &&
                 <>
                     <h3 style={questionAnswer}>Answer:</h3>
-                    <p style={{fontSize: 32, fontWeight: 700, marginBottom: 30}}>{exactQuestion?.answer}</p>
-                    <p style={{fontSize: 20, fontWeight: 500, marginBottom: 30, width: '70%', textAlign: 'center'}}>{exactQuestion?.description}</p>
-                    <Button variant="primary" style={{...buttonStyle, position: 'absolute', bottom: 50, left: "40%"}} onClick={handleReturn}>
+                    <p style={{fontSize: 30, fontWeight: 700, marginBottom: 20, textAlign: 'center'}}>{exactQuestion?.answer}</p>
+                    <p style={{fontSize: 18, fontWeight: 500, marginBottom: 20, width: '70%', textAlign: 'center'}}>{exactQuestion?.description}</p>
+                    <Button variant="primary" style={{...buttonStyle}} onClick={handleReturn}>
                         Return
                     </Button>
                     {
-                        (exactQuestion?.answerYes || exactQuestion?.answerNo) && <div style={{content: "", width: "80%", height: 2, backgroundColor: "#000", marginBottom: 50}} />
+                        (exactQuestion?.answerYes || exactQuestion?.answerNo) && <div style={{content: "", width: "80%", height: 2, backgroundColor: "#000", marginBottom: 40, marginTop: 20, flexShrink: 0}} />
                     }
 
                 </>
@@ -71,7 +71,7 @@ const QuestionComponent = () => {
             {
                 exactQuestion?.text &&
                 <>
-                    <p style={{fontSize: 32, fontWeight: 700, marginBottom: 50}}>{exactQuestion?.text}</p>
+                    <p style={{fontSize: 30, fontWeight: 700, marginBottom: 40, textAlign: 'center'}}>{exactQuestion?.text}</p>
                 </>
             }
 
