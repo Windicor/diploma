@@ -7,12 +7,12 @@ const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
     height: '100vh',
     maxHeight: '100vh',
     backgroundColor: '#f2f2f2',
     padding: '20px',
-    position: "relative"
+    position: "relative",
+    overflow: 'auto',
 };
 
 const questionAnswer = {
