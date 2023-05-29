@@ -59,7 +59,7 @@ const QuestionComponent = () => {
                     <p style={{fontSize: 30, fontWeight: 700, marginBottom: 20, textAlign: 'center'}}>{exactQuestion?.answer}</p>
                     <p style={{fontSize: 18, fontWeight: 500, marginBottom: 20, width: '70%', textAlign: 'center'}}>{exactQuestion?.description}</p>
                     <Button variant="primary" style={{...buttonStyle}} onClick={handleReturn}>
-                        В начало
+                        Назад
                     </Button>
                     {
                         (exactQuestion?.answerYes || exactQuestion?.answerNo) && <div style={{content: "", width: "80%", height: 2, backgroundColor: "#000", marginBottom: 40, marginTop: 20, flexShrink: 0}} />
