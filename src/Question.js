@@ -79,10 +79,10 @@ const QuestionComponent = () => {
                 (exactQuestion?.answerYes || exactQuestion?.answerNo) &&
                 <div style={{display: 'flex', alignItems: "center", justifyContent: "center", gap: '7%', width: '100%'}}>
                     <Button variant="primary" style={buttonStyle} onClick={handleAnswerYes}>
-                        Yes
+                        Да
                     </Button>
                     <Button variant="primary" style={buttonStyle} onClick={handleAnswerNo}>
-                        No
+                        Нет
                     </Button>
                 </div>
             }
